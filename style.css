@@ -34,7 +34,7 @@ img {
   height: auto;
 }
 
-.logo a{
+.logo a {
   font-weight: 900;
   font-size: 24px;
   color: var(--font-base);
@@ -61,7 +61,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+
 }
 
 .nav-links a {
@@ -130,7 +130,7 @@ img {
 /* Hero */
 
 #hero {
-scroll-margin-top: 100px;
+  scroll-margin-top: 100px;
 }
 
 .hero {
@@ -231,7 +231,8 @@ scroll-margin-top: 100px;
     align-items: center;
     justify-content: space-between;
     gap: 12px;
-    padding: 0 16px; /* sama padding kiri kanan */
+    padding: 0 16px;
+    /* sama padding kiri kanan */
   }
 
   .hero-text h1 {
@@ -575,11 +576,11 @@ scroll-margin-top: 100px;
 
   .project-title h3 {
     font-size: 14px;
-  margin: 0;
-  flex: 1;
-  white-space: normal;
-  overflow-wrap: break-word;
-  word-break: break-word;
+    margin: 0;
+    flex: 1;
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-break: break-word;
   }
 
   .project-title span {
@@ -682,8 +683,13 @@ scroll-margin-top: 100px;
   }
 
   .project-swiper-images .swiper-slide {
-    padding-right: 12px;
+    flex-shrink: 0;
   }
+
+  .project-swiper-images .swiper-slide:not(:last-child) {
+    margin-right: 12px;
+  }
+
 
   .project-swiper-images .swiper-wrapper {
     padding-right: 16px;
@@ -735,7 +741,7 @@ scroll-margin-top: 100px;
 }
 
 .footer {
-  background-color: #131D4F; 
+  background-color: #131D4F;
   padding: 24px 0;
   text-align: center;
 }
@@ -754,7 +760,7 @@ scroll-margin-top: 100px;
 }
 
 .footer-contacts a:hover {
-  color: #FFD700; 
+  color: #FFD700;
 }
 
 .footer-copy {
