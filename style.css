@@ -52,12 +52,13 @@ img {
   z-index: 999;
   width: 100%;
   background-color: var(--bg-main);
+  
 }
 
 .navbar .container {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 20px 20px;
+  padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -131,11 +132,11 @@ img {
 
 #hero {
   scroll-margin-top: 100px;
+  background-color: #FFE0D1;
 }
 
 .hero {
-  background-color: var(--bg-pink);
-  padding: 20px 20px 20px 20px;
+  padding: 100px 20px 20px 20px;
   color: var(--text-dark);
 }
 
@@ -170,15 +171,61 @@ img {
 
 .hero-img {
   flex: 0 0 auto;
+  padding: 20px 0 15px 0;
 }
 
 .hero-img img {
-  width: 250px;
+  width: 200px;
   object-fit: cover;
+  margin: 0;
 }
 
 /* Responsive */
 
+
+@media (max-width: 1024px) {
+  .hero-inner {
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 15px 32px 15px;
+  }
+
+  .hero-text {
+    flex: 1 1 0%;
+    margin-bottom: 0;
+  }
+
+  .hero-text h1 {
+    font-size: 28px;
+  }
+
+  .hero-text p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+    max-width: 90%;
+  }
+
+  .hero-img {
+    flex: 0 0 auto;
+  }
+
+  .hero-img img {
+    width: 150px;
+    margin: 0;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 6px 18px;
+    font-size: 14px;
+    margin-top: 12px;
+    border-radius: 20px;
+  }
+}
 
 @media (max-width: 768px) {
   .hero-inner {
@@ -186,8 +233,8 @@ img {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    gap: 12px;
-    padding: 0 18px;
+    gap: 20px;
+    padding: 15px 20px 15px;
   }
 
   .hero-text {
@@ -203,7 +250,7 @@ img {
     font-size: 12px;
     line-height: 1.4;
     margin-bottom: 8px;
-    max-width: 100%;
+    max-width: 90%;
   }
 
   .hero-img {
@@ -211,7 +258,7 @@ img {
   }
 
   .hero-img img {
-    width: 110px;
+    width: 100px;
     margin: 0;
   }
 
@@ -224,6 +271,7 @@ img {
   }
 }
 
+
 @media (max-width: 480px) {
   .hero-inner {
     flex-wrap: nowrap;
@@ -231,16 +279,16 @@ img {
     align-items: center;
     justify-content: space-between;
     gap: 12px;
-    padding: 0 16px;
+    padding: 0 16px 10px;
     /* sama padding kiri kanan */
   }
 
   .hero-text h1 {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .hero-text p {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .hero-img img {
@@ -255,17 +303,17 @@ img {
 
 
 .btn {
-  background: var(--primary);
-  color: #fff;
-  padding: 12px 25px;
+  background: #901E3E;
+  color: var(--bg-pink);
+  padding: 10px 18px;
   text-decoration: none;
   border-radius: 25px;
   transition: 0.3s ease;
 }
 
 .btn:hover {
-  background: #fff;
-  color: var(--primary);
+  background: var(--primary);
+  color: var(--bg-pink);
   border: 2px solid var(--primary);
 }
 
@@ -525,7 +573,6 @@ img {
 .swiper-slide img {
   width: 320px;
   object-fit: cover;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -621,6 +668,8 @@ img {
     width: 12px;
     height: 12px;
   }
+
+  
 }
 
 @media (max-width: 480px) {
@@ -730,7 +779,7 @@ img {
 
 .certif-card {
   background: var(--accent);
-  padding: 20px;
+  padding: 12px 20px;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -739,6 +788,8 @@ img {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
   align-items: flex-start;
 }
+
+
 
 .footer {
   background-color: #131D4F;
