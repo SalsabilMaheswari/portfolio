@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
 </head>
 
 <body>
@@ -17,6 +20,7 @@
         <div class="container">
             <div class="logo"><a href="#hero">Maheswari's <br> Portfolio</a></div>
             <div class="nav-links">
+                <a href="#skills">Skills</a>
                 <a href="#education">Education</a>
                 <a href="#work">Work Experience</a>
                 <a href="#projects">Projects</a>
@@ -32,11 +36,27 @@
             <div class="hero-text">
                 <h1>Hi! I’m Salsabil Maheswari</h1>
                 <p>Undergraduate student majoring in Management Information Systems at President University,
-                    batch of 2023. Interested in programming, database systems, and actively learning data science.</p>
-                <a href="cv.pdf" class="btn">Download CV</a>
+                    batch 2023. Interested in programming, database systems, and actively learning data science.</p>
+                <a href="CV/CV SALSABIL MAHESWARI FIX.pdf" download class="btn">Download CV</a>
             </div>
             <div class="hero-img">
-                <img src="IMG/mahes.jpg" alt="Maheswari Photo">
+                <img src="IMG/IMG_1413.png" alt="Maheswari Photo">
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="container section">
+        <h2>Skills</h2>
+        <div class="card-wrapper">
+            <div class="card">
+                <iconify-icon icon="logos:python"></iconify-icon>
+                <iconify-icon icon="logos:php"></iconify-icon>
+                <iconify-icon icon="logos:html-5"></iconify-icon>
+                <iconify-icon icon="logos:css-3"></iconify-icon>
+                <iconify-icon icon="logos:figma"></iconify-icon>
+                <iconify-icon icon="simple-icons:powerbi"></iconify-icon>
+                <iconify-icon icon="logos:mysql"></iconify-icon>
+                <iconify-icon icon="logos:postgresql"></iconify-icon>
             </div>
         </div>
     </section>
@@ -48,20 +68,21 @@
         <div class="card-wrapper">
             <div class="card">
                 <div>
+                    <h3>Candidate for Bachelor of Science in Computing - President University</h3>
+                    <p>Major in Management Information Systems</p>
+                    <span>Sep 2023 – Present</span>
+                </div>
+                <img src="IMG/logo/Logo President University [Bloguna].png" alt="Logo PresUniv">
+            </div>
+            <div class="card">
+                <div>
                     <h3>High School Diploma - SMK Telekomunikasi Telesandi Bekasi</h3>
                     <p>Major in Software Engineering</p>
                     <span>Jul 2020 – May 2023</span>
                 </div>
                 <img src="IMG/logo/logotelesandi.png" alt="Logo SMK">
             </div>
-            <div class="card">
-                <div>
-                    <h3>Candidate for Bachelor of Science in Computing - <br>President University</h3>
-                    <p>Major in Management Information Systems</p>
-                    <span>Sep 2023 – Present</span>
-                </div>
-                <img src="IMG/logo/Logo President University [Bloguna].png" alt="Logo PresUniv">
-            </div>
+
         </div>
     </section>
 
@@ -88,29 +109,76 @@
 
     <section id="projects" class="container section">
         <h2 class="section-title">Projects</h2>
+        
         <div class="projects-card-wrapper">
             <div class="projects-card">
                 <div class="project-title">
-                    <h3>Simple Cashier Application Based on VB.NET</h3>
-                    <span>(Aug 2021 - Dec 2021)</span>
+                    <h3>Data Science Bootcamp Final Project</h3>
+                    <span>(May 2025)</span>
                 </div>
                 <div class="project-card-text">
                     <p>
-                        Created the first static application, with the feature of selecting the items purchased, the
-                        number of items purchased, and the total to be paid, not used a database yet.
+                        Analyzed course performance using Python and Django. Applied K-Means clustering to
+                        group courses by average grade, difficulty level, and enrollment for better academic
+                        planning.
                     </p>
                 </div>
-                <div class="project-images">
-                    <img src="IMG/vbnet/projectvbnet1.png" alt="vb net">
-                    <img src="IMG/vbnet/projectvbnet2.png" alt="vb net">
+                <div class="swiper project-swiper-images">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="IMG/dsproject/form.png" alt="web DS">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="IMG/dsproject/result.png" alt="web DS">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="IMG/dsproject/loadclustered.png" alt="web DS">
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
                 </div>
+
             </div>
         </div>
 
         <div class="projects-card-wrapper">
             <div class="projects-card">
                 <div class="project-title">
-                    <h3>Company Profile of PT DumbWays Indonesia Based Website used PHP Native</h3>
+                    <h3>UMKM Promotional Website</h3>
+                    <span>(Sep 2023 - Mar 2024)</span>
+                </div>
+                <div class="project-card-text">
+                    <p>
+                        Initiated and led a project to create a unified promotional website for students actively
+                        promoting their products through various chat groups.
+                    </p>
+                </div>
+                <div class="swiper project-swiper-images">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="IMG/umkmproject/ledproject.png" alt="web umkm">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="IMG/umkmproject/ledproject (2).png" alt="web umkm">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="IMG/umkmproject/ledproject1.jpg" alt="web UMKM">
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="projects-card-wrapper">
+            <div class="projects-card">
+                <div class="project-title">
+                    <h3>Company Profile Website</h3>
                     <span>(Mar 2022 - Apr 2022)</span>
                 </div>
                 <div class="project-card-text">
@@ -153,91 +221,27 @@
 
             </div>
         </div>
-
+        
         <div class="projects-card-wrapper">
             <div class="projects-card">
                 <div class="project-title">
-                    <h3>UMKM Promotional Website (Leader)</h3>
-                    <span>(Sep 2023 - Mar 2024)</span>
+                    <h3>Simple Cashier Application Based on VB.NET</h3>
+                    <span>(Aug 2021 - Dec 2021)</span>
                 </div>
                 <div class="project-card-text">
                     <p>
-                        Initiated and led a project to create a unified promotional website for students actively
-                        promoting their products through various chat groups.
-                    </p>
-                </div>
-                <div class="swiper project-swiper-images">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="IMG/umkmproject/ledproject1.jpg" alt="web UMKM">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="IMG/umkmproject/ledproject.png" alt="web umkm">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="IMG/umkmproject/ledproject (2).png" alt="web umkm">
-                        </div>
-                    </div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-
-                </div>
-
-            </div>
-        </div>
-
-        <div class="projects-card-wrapper">
-            <div class="projects-card">
-                <div class="project-title">
-                    <h3>Short Movie: Harmonization of National Life in Indonesia's Future by Pancasila Values
-                        (Treasurer)</h3>
-                    <span>(Jun 2024 - Jul 2024)</span>
-                </div>
-                <div class="project-card-text">
-                    <p>
-                        Handle the team budget by pooling collected funds and managing expenses during the
-                        project.
+                        Created the first static application, with the feature of selecting the items purchased, the
+                        number of items purchased, and the total to be paid, not used a database yet.
                     </p>
                 </div>
                 <div class="project-images">
-                    <img src="IMG/smt3/smt3-1.jpg" alt="smt 3">
-                    <img src="IMG/smt3/smt3.jpg" alt="smt 3">
+                    <img src="IMG/vbnet/projectvbnet1.png" alt="vb net">
+                    <img src="IMG/vbnet/projectvbnet2.png" alt="vb net">
                 </div>
             </div>
         </div>
 
-        <div class="projects-card-wrapper">
-            <div class="projects-card">
-                <div class="project-title">
-                    <h3>Data Science Bootcamp Final Project</h3>
-                    <span>(May 2025)</span>
-                </div>
-                <div class="project-card-text">
-                    <p>
-                        Analyzed course performance using Python and Django. Applied K-Means clustering to
-                        group courses by average grade, difficulty level, and enrollment for better academic
-                        planning.
-                    </p>
-                </div>
-                <div class="swiper project-swiper-images">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="IMG/dsproject/form.png" alt="web UMKM">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="IMG/dsproject/result.png" alt="web umkm">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="IMG/dsproject/loadclustered.png" alt="web umkm">
-                        </div>
-                    </div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-
-                </div>
-
-            </div>
-        </div>
+         
     </section>
 
     <section id="certificates" class="container section">
@@ -247,22 +251,22 @@
                 <div class="swiper project-swiper-images">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="IMG/sertifikat/SERTIFIKAT UJI LEVEL.jpg" alt="web UMKM">
+                            <img src="IMG/sertifikat/SERTIFIKAT UJI LEVEL.jpg" alt="sertif 1">
                         </div>
                         <div class="swiper-slide">
-                            <img src="IMG/sertifikat/SERTIFIKAT UJIKOM 1.jpg" alt="web umkm">
+                            <img src="IMG/sertifikat/SERTIFIKAT UJIKOM 1.jpg" alt="sertif 2">
                         </div>
                         <div class="swiper-slide">
-                            <img src="IMG/sertifikat/SERTIFIKAT UJIKOM 2.jpg" alt="web umkm">
+                            <img src="IMG/sertifikat/SERTIFIKAT UJIKOM 2.jpg" alt="sertif 3">
                         </div>
                         <div class="swiper-slide">
-                            <img src="IMG/sertifikat/manajemen projek.jpg" alt="web umkm">
+                            <img src="IMG/sertifikat/manajemen projek.jpg" alt="sertif 4">
                         </div>
                         <div class="swiper-slide">
-                            <img src="IMG/sertifikat/aws.jpg" alt="web umkm">
+                            <img src="IMG/sertifikat/aws.jpg" alt="sertif 5">
                         </div>
                         <div class="swiper-slide">
-                            <img src="IMG/sertifikat/literature.jpg" alt="web umkm">
+                            <img src="IMG/sertifikat/literature.jpg" alt="sertif 6">
                         </div>
                     </div>
                     <div class="swiper-button-prev"></div>
